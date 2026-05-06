@@ -6,7 +6,7 @@
 ![HuggingFace](https://img.shields.io/badge/HuggingFace-Transformers-yellow.svg)
 
 ## Project Overview
-This repository contains the source code and experimental framework for a Master's Thesis project titled **"Studi Komparatif Arsitektur Bi-LSTM dan RoBERTa dalam Klasifikasi Rasio Kebergunaan (Helpfulness Ratio) pada Ulasan Buku E-Commerce"**. 
+This repository contains the source code and experimental framework for a Deep Learning project titled **"Studi Komparatif Arsitektur Bi-LSTM dan RoBERTa dalam Klasifikasi Rasio Kebergunaan (Helpfulness Ratio) pada Ulasan Buku E-Commerce"**. 
 
 The primary objective of this project is to solve the **Cold-Start Ranking Problem** in e-commerce platforms. Currently, highly analytical and long-format literature reviews are often buried at the bottom of the page because they lack initial user engagement (zero likes/votes). This automated Natural Language Processing (NLP) pipeline classifies reviews as "Helpful" (Class 1) or "Not Helpful" (Class 0) based purely on their textual semantic structure in real-time, bypassing the traditional user-upvoting mechanism.
 
