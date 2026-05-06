@@ -1,16 +1,16 @@
-# 📚 E-Commerce Book Reviews Helpfulness Classification: Bi-LSTM vs RoBERTa
+# E-Commerce Book Reviews Helpfulness Classification: Bi-LSTM vs RoBERTa
 
 ![Python](https://img.shields.io/badge/Python-3.10-blue.svg)
 ![TensorFlow](https://img.shields.io/badge/TensorFlow-2.14-orange.svg)
 ![PyTorch](https://img.shields.io/badge/PyTorch-2.1-red.svg)
 ![HuggingFace](https://img.shields.io/badge/HuggingFace-Transformers-yellow.svg)
 
-## 📌 Project Overview
+## Project Overview
 This repository contains the source code and experimental framework for a Master's Thesis project titled **"Studi Komparatif Arsitektur Bi-LSTM dan RoBERTa dalam Klasifikasi Rasio Kebergunaan (Helpfulness Ratio) pada Ulasan Buku E-Commerce"**. 
 
 The primary objective of this project is to solve the **Cold-Start Ranking Problem** in e-commerce platforms. Currently, highly analytical and long-format literature reviews are often buried at the bottom of the page because they lack initial user engagement (zero likes/votes). This automated Natural Language Processing (NLP) pipeline classifies reviews as "Helpful" (Class 1) or "Not Helpful" (Class 0) based purely on their textual semantic structure in real-time, bypassing the traditional user-upvoting mechanism.
 
-## 📊 Dataset
+## Dataset
 The experiment utilizes the [Amazon Books Reviews Dataset from Kaggle](https://www.kaggle.com/datasets/mohamedbakhet/amazon-books-reviews). 
 *   **Target File:** `Books_rating.csv`
 *   **Preprocessing Pipeline:**
@@ -20,7 +20,7 @@ The experiment utilizes the [Amazon Books Reviews Dataset from Kaggle](https://w
     4. Sub-sampled 15,000 data points to optimize GPU memory constraints in Google Colab.
     5. Stratified Train-Test Split (80:20).
 
-## 🧠 Methodology & Architectures
+## Methodology & Architectures
 This project acts as a comparative study between traditional sequential models and modern attention-based architectures for handling long-range textual dependencies.
 
 1.  **Baseline Model (Bi-LSTM):** 
@@ -32,7 +32,7 @@ This project acts as a comparative study between traditional sequential models a
     *   Architecture: `roberta-base` utilizing parallel Self-Attention mechanisms via Transfer Learning.
     *   Loss Function: Standard Cross-Entropy directly mapped to logits.
 
-## 📈 Key Findings & Results
+## Key Findings & Results
 The empirical evaluation on 3,000 unseen test samples demonstrates the absolute supremacy of the RoBERTa architecture in mapping logical arguments within long-format text. The Bi-LSTM model suffered from severe *vanishing gradient* and *overfitting*, struggling to retain early context in lengthy book reviews.
 
 | Metric | Bi-LSTM (Baseline) | RoBERTa (Proposed SOTA) |
@@ -46,7 +46,7 @@ The empirical evaluation on 3,000 unseen test samples demonstrates the absolute 
 *   **Bi-LSTM Weakness:** Exhibited high **False Positives (710)**. It failed to comprehend context and was easily tricked into classifying "spam/useless" reviews as helpful.
 *   **RoBERTa Dominance:** Successfully suppressed False Positives down to 536 and skyrocketed **True Positives to 1455**. The self-attention matrix successfully identified objective literary criticism, even if the review contained negative sentiment words at the end of the text.
 
-## 🚀 How to Run the Code
+## How to Run the Code
 1. Clone this repository:
    ```bash
-   git clone [https://github.com/yourusername/amazon-reviews-helpfulness-classification.git](https://github.com/yourusername/amazon-reviews-helpfulness-classification.git)
+   git clone [https://github.com/Rednxt/amazon-reviews-helpfulness-classification-SeanK/edit/main/README.md)
