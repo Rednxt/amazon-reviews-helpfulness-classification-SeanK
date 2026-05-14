@@ -66,6 +66,72 @@ The empirical evaluation on 3,000 unseen test samples demonstrates the absolute 
 RoBERTa successfully identified objective literary criticism even if the review contained negative sentiment words at the end of the text, proving its capability to resolve the Cold-Start Problem in production environments.
 
 ## How to Run the Code
-1. Clone this repository:
+
+Due to the heavy computational requirements of the RoBERTa model, **executing the code via Google Colab (with T4 GPU enabled) is highly recommended**.
+
+### Option A: Running on Google Colab (Recommended)
+1. Open [Google Colab](https://colab.research.google.com/).
+2. Click **File > Upload Notebook** and select the `Ulasan_Buku_E_Commerce_(Apple_to_apple).ipynb` file from the `notebooks/` folder in this repository.
+3. Go to **Runtime > Change runtime type** and ensure the Hardware Accelerator is set to **GPU (T4)**.
+4. Go to your [Kaggle Account Settings](https://www.kaggle.com/settings) and click **Create New Token** to download your `kaggle.json` API key.
+5. Upload the `kaggle.json` file to the Colab session storage.
+6. Run the notebook cell by cell. The dataset will be automatically downloaded and extracted via the Kaggle API script included in the first few cells.
+
+### Option B: Running Locally (Requires High-End GPU)
+If you prefer to run the project on your local machine, ensure you have Python 3.9+ and a CUDA-enabled GPU installed.
+
+## How to Run the Code
+
+Due to the heavy computational requirements of the RoBERTa model, **executing the code via Google Colab (with T4 GPU enabled) is highly recommended**.
+
+### Option A: Running on Google Colab (Recommended)
+1. Open [Google Colab](https://colab.research.google.com/).
+2. Click **File > Upload Notebook** and select the `Ulasan_Buku_E_Commerce_(Apple_to_apple).ipynb` file from the `notebooks/` folder in this repository.
+3. Go to **Runtime > Change runtime type** and ensure the Hardware Accelerator is set to **GPU (T4)**.
+4. Go to your [Kaggle Account Settings](https://www.kaggle.com/settings) and click **Create New Token** to download your `kaggle.json` API key.
+5. Upload the `kaggle.json` file to the Colab session storage.
+6. Run the notebook cell by cell. The dataset will be automatically downloaded and extracted via the Kaggle API script included in the first few cells.
+
+### Option B: Running Locally (Requires High-End GPU)
+If you prefer to run the project on your local machine, ensure you have Python 3.9+ and a CUDA-enabled GPU installed.
+
+## How to Run the Code
+
+Due to the heavy computational requirements of the RoBERTa model, **executing the code via Google Colab (with T4 GPU enabled) is highly recommended**.
+
+### Option A: Running on Google Colab (Recommended)
+1. Open [Google Colab](https://colab.research.google.com/).
+2. Click **File > Upload Notebook** and select the `Ulasan_Buku_E_Commerce_(Apple_to_apple).ipynb` file from the `notebooks/` folder in this repository.
+3. Go to **Runtime > Change runtime type** and ensure the Hardware Accelerator is set to **GPU (T4)**.
+4. Go to your [Kaggle Account Settings](https://www.kaggle.com/settings) and click **Create New Token** to download your `kaggle.json` API key.
+5. Upload the `kaggle.json` file to the Colab session storage.
+6. Run the notebook cell by cell. The dataset will be automatically downloaded and extracted via the Kaggle API script included in the first few cells.
+
+### Option B: Running Locally (Requires High-End GPU)
+If you prefer to run the project on your local machine, ensure you have Python 3.9+ and a CUDA-enabled GPU installed.
+
+1. **Clone this repository:**
    ```bash
    git clone [https://github.com/Rednxt/amazon-reviews-helpfulness-classification-SeanK.git](https://github.com/Rednxt/amazon-reviews-helpfulness-classification-SeanK.git)
+   cd amazon-reviews-helpfulness-classification-SeanK
+**2. Create a virtual environment (Optional but recommended):**
+```bash
+python -m venv venv
+source venv/bin/activate  # On Windows use: venv\Scripts\activate
+```
+**3.Install the required dependencies:**
+```bash
+pip install -r requirements.txt
+```
+4. **Download the Dataset:**
+   * Read the instructions in `data/pentunjuk_dataset.txt` to download the `Books_rating.csv` dataset.
+   * Place the dataset inside the same directory as your notebook.
+
+5. **Launch Jupyter Notebook:**
+   ```bash
+   jupyter notebook
+
+Open notebooks/Ulasan_Buku_E_Commerce_(Apple_to_apple).ipynb and run the cells sequentially.
+
+
+
