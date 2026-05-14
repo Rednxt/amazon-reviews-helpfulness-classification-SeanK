@@ -10,6 +10,23 @@ This repository contains the source code and experimental framework for a Deep L
 
 The primary objective of this project is to solve the **Cold-Start Ranking Problem** in e-commerce platforms. According to prior research (McAuley & Leskovec, 2013), highly analytical and long-format literature reviews from experts often get buried at the bottom of the page because they lack initial user engagement (zero likes/votes). This automated Natural Language Processing (NLP) pipeline classifies reviews as "Helpful" (Class 1) or "Not Helpful" (Class 0) based purely on their textual semantic structure in real-time, bypassing the traditional user-upvoting mechanism.
 
+## Repository Structure
+
+```text
+DL 2_Amazon Book Review Classification_Sean K/
+├── data/
+│   └── pentunjuk_dataset.txt                  # Instructions to download the Kaggle dataset
+├── images/
+│   ├── ConfusionMatrixBi-LSTM.png             # False Positive insights for baseline model
+│   ├── ConfusionMatrixRoBERTa.png             # Sniper filtering insights for SOTA model
+│   ├── DistribusiKelas.png                    # Target class threshold distribution
+│   ├── Gambar3.1_Grafik Evaluasi Bi-LSTM.png  # Bi-LSTM training loss & overfitting curve
+│   ├── Gambar3.2_Grafik Loss RoBERTa.png      # RoBERTa stable training curve
+│   └── KomparasiMetrik.png                    # Final precision, recall, and F1-Score results
+├── notebooks/
+│   └── Ulasan_Buku_E_Commerce_(Apple_to_apple).ipynb # Main Google Colab Jupyter Notebook
+└── requirements.txt                           # List of Python dependencies
+
 ## Dataset
 The experiment utilizes the [Amazon Books Reviews Dataset from Kaggle](https://www.kaggle.com/datasets/mohamedbakhet/amazon-books-reviews). 
 * **Target File:** `Books_rating.csv`
