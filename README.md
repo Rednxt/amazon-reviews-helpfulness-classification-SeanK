@@ -26,6 +26,7 @@ DL 2_Amazon Book Review Classification_Sean K/
 ├── notebooks/
 │   └── Ulasan_Buku_E_Commerce_(Apple_to_apple).ipynb # Main Google Colab Jupyter Notebook
 └── requirements.txt                           # List of Python dependencies
+```
 
 ## Dataset
 The experiment utilizes the [Amazon Books Reviews Dataset from Kaggle](https://www.kaggle.com/datasets/mohamedbakhet/amazon-books-reviews). 
